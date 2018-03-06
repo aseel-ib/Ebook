@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8"/>
+		<title>Buy Book</title>
+        <link rel="stylesheet" href="css/eBook.css">
+        <script src="js/eBook.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <a class="navbar-brand" href="#">E Book</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link inventory" href="inventory.html">Inventory</a>
+					<a class="nav-item nav-link profile"  href="profile.html" onclick="profile()">Profile</a>
+                    <a class="nav-item nav-link login" href="login.html">Login</a>
+                    <a class="nav-item nav-link register" href="register.html">Register</a>
+					<a class="nav-item logout" href="javascript:void(0);" onclick="logout()">Logout</a>
+                </div>
+            </div>
+        </nav>
+		
+		<div id="commentdeckCard">
+			<script>
+				getBookByID();
+			</script>
+		</div>
+		
+		<div id="payment" class="container">
+			<div id="loginAnnounce">
+				<h2>Please login to buy this book!</h2>
+			</div>
+			<form id="paymentForm" onsubmit="buyForm(this); return false;" method="post" class="loginContainer">
+				<input required type="text" class="form-control" name="name" id="name" placeholder="Card Holder's Name">
+				<input required type="text" class="form-control" name="number" id="number" placeholder="Debit/Credit Card Number">
+				<select required class="form-control" name="month" id="month">
+					<option value="">Month</option>
+					<option value="01">Jan (01)</option>
+					<option value="02">Feb (02)</option>
+					<option value="03">Mar (03)</option>
+					<option value="04">Apr (04)</option>
+					<option value="05">May (05)</option>
+					<option value="06">June (06)</option>
+					<option value="07">July (07)</option>
+					<option value="08">Aug (08)</option>
+					<option value="09">Sep (09)</option>
+					<option value="10">Oct (10)</option>
+					<option value="11">Nov (11)</option>
+					<option value="12">Dec (12)</option>
+				  </select>
+				  <select required class="form-control" name="year">
+					<option value="">Year</option>
+					<option value="2013">2013</option>
+					<option value="2014">2014</option>
+					<option value="2015">2015</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+					<option value="2019">2019</option>
+					<option value="2020">2020</option>
+					<option value="2021">2021</option>
+					<option value="2022">2022</option>
+					<option value="2023">2023</option>
+				  </select>
+				<input required type="text" class="form-control" name="cvv" id="cvv" placeholder="Security Code">
+				<input type="submit" class="btn btn-success" value="BUY">
+			</form>
+		</div>
+		<script>
+			checkBuy();
+		</script>
+		
+	
+    </body>
+</html>

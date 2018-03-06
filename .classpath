@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Dell Latitude/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.23/tomcat-embed-core-8.5.23.jar" sourcepath="C:/Users/Dell Latitude/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.23/tomcat-embed-core-8.5.23-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="org.apache.tomcat.embed"/>
+			<attribute name="maven.artifactId" value="tomcat-embed-core"/>
+			<attribute name="maven.version" value="8.5.23"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_144/jre/lib/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dell Latitude/.m2/repository/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="net.minidev"/>
+			<attribute name="maven.artifactId" value="json-smart"/>
+			<attribute name="maven.version" value="2.2.1"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Dell Latitude/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="com.vaadin.external.google"/>
+			<attribute name="maven.artifactId" value="android-json"/>
+			<attribute name="maven.version" value="0.0.20131108.vaadin1"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derby.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_cs.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_de_DE.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_es.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_fr.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_hu.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_it.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_ja_JP.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_ko_KR.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_pl.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_pt_BR.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_ru.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_zh_CN.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyLocale_zh_TW.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbynet.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyoptionaltools.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbyrun.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/derbytools.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/gson-2.8.2.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

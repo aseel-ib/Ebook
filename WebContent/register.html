@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Register</title>
+    <link rel="stylesheet" href="css/eBook.css">
+    <script src="js/eBook.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <a class="navbar-brand" href="#">E Book</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">Home</a>
+                    <a class="nav-item nav-link inventory" href="inventory.html">Inventory</a>
+					<a class="nav-item nav-link profile"  href="profile.html" onclick="profile()">Profile</a>
+                    <a class="nav-item nav-link login" href="login.html">Login</a>
+                    <a class="nav-item nav-link register" href="register.html">Register<span class="sr-only">(current)</span></a>
+					<a class="nav-item logout" href="javascript:void(0);" onclick="logout()">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+		
+    <form id="registerForm" onsubmit="postRegister(this); return false;" class="loginContainer">
+		<fieldset>
+			<legend>Basic info</legend>
+			<input type="text" required minlength="3" maxlength="10" name="name" placeholder="name" title="Write your first name: 3-10 characters only">
+			<input type="text" name="email" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Acceptable pattern george@gmail.com">
+			<input type="text" name="address" placeholder="address">
+			<input type="tel" name="telephone" placeholder="Telephone" pattern="^[0][1-9][0-9]{6,8}$" title="Phone starts with 0, 8-10 numbers.">
+			<input type="password" required minlength="3" maxlength="8" name="password" placeholder="password">
+		</fieldset>
+		<fieldset>
+			<legend>Extra info</legend>
+			<input type="text" required minlength="3" maxlength="20" name="nickname" placeholder="nickname" title="Write your nick name: 3-20 characters only">
+			<textarea rows="4" cols="50" minlength="3" maxlength="50" name="desc" placeholder="Enter text here..."></textarea>
+		</fieldset>
+		<input type="text" name="photoURL" placeholder="photoURL" title="Provide photo URL">
+        <input type="submit" class="btn btn-success"  value="register">
+		<div id="error"></div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Admin Reviews</title>
+		<link rel="stylesheet" href="css/eBook.css">
+		<script src="js/eBook.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+			<a class="navbar-brand" href="#">Admin Panel</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					    <a class="nav-item nav-link showAdminLogin" href="login_admin.html">Admin Login</a>
+						<a class="nav-item nav-link showAdmin" href="users_admin.html">Manage Users</a>
+						<a class="nav-item nav-link showAdmin" href="books_admin.html">View Books</a>
+						<a class="nav-item nav-link showAdmin" href="reviews_admin.html">Verify Reviews<span class="sr-only">(current)</span></a>
+						<a class="nav-item nav-link showAdmin" href="log_admin.html">View Orders</a>
+						<a class="nav-item showAdminLogout" href="javascript:void(0);" onclick="adminLogout()">Logout</a>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="table-responsive">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">Book</th>
+						<th scope="col">Username</th>
+						<th scope="col">Review</th>
+						<th scope="col"></th>
+					</tr>
+				</thead>
+				<tbody id="coolList">
+				</tbody>
+			</table>
+		</div>
+		
+		<script>
+			window.addEventListener("load", getUnverfiedReviews(), false);
+		</script>
+	</body>
+
+</html>
